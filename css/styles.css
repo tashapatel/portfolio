@@ -527,6 +527,13 @@ h4 {
 }
 
 @media screen and (max-width:414px) {
+    
+      .scrolltext {
+        display:none;
+    }
+
+    
+    
     .artisttext .line {
         padding: 0px;
         font-size: 18px;
