@@ -1,0 +1,594 @@
+/* -- BODY FUNCTIONS -- */
+
+body {}
+
+.hideme {
+    opacity: 0;
+}
+
+
+/* -- HOME -- */
+
+#home {
+    min-height: 100vh;
+    /*    padding: 0px 180px;*/
+    background-image: url(background3.jpg);
+    height: 100%;
+    width: 100%;
+    /*    background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* logo */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    margin-top: 110px;
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    top: 4%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    z-index: 5;
+    height: 100px;
+}
+
+.fixed img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    position: relative;
+}
+
+.fixed img:hover {
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: "Gill Sans", "Helvetica";
+    color: black;
+    letter-spacing: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.center {
+    padding: 0px 180px;
+    text-align: center;
+}
+
+.artisttext {
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #333333;
+    font-size: 22px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e84918;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-top: 80px;
+}
+
+.artisttext .line {
+    background: #fff;
+    padding: 0px 30px;
+}
+
+.scrolltext {
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #333333;
+    font-size: 17px;
+    bottom: 0px;
+}
+
+.orange {
+    color: #e84918;
+    z-index: 1000;
+}
+
+.fadeIn {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+.fadeInUp {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+.bounce {
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.technoContainer {
+    position: absolute;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 38%;
+}
+
+.scribH4 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.scribContainer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.H4Container {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* -- portfolio -- */
+
+#portfolio {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.center2 {
+    padding: 0px 50px;
+}
+
+.title {
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #333333;
+    font-size: 22px;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e84918;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-bottom: 90px;
+}
+
+.title .line {
+    background: #fff;
+    padding: 0px 30px;
+}
+
+.portimgs img {
+    background-color: #f3f3f3;
+    width: 80%;
+    padding: 1px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.port1:hover .middle {
+    opacity: 1;
+}
+
+.portimgs img:hover {
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.imgtext {
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #efefef;
+    background-color: #e8491a;
+    font-size: 16px;
+    text-align: center;
+    line-height: 0.1em;
+    padding: 8px 10px;;
+   
+
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* -- PORTFOLIO MODALS -- */
+
+h3 {
+    font-family: "Gill Sans", "Helvetica";
+    color: black;
+    letter-spacing: 7px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 100;
+    padding-top: 60px;
+}
+
+.grey {
+    color: #333
+}
+
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+.modal-backdrop {
+    position: relative;
+}
+
+.portfolio-modal .modal-content {
+    background-color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-clip: border-box;
+    box-shadow: none;
+    border: none;
+}
+
+button {
+    align-content: center;
+}
+
+.portfolio-modal .close-modal {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: 0.300000011920928955078125;
+}
+
+.portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #2C3E50;
+    transform: rotate(45deg);
+    z-index: 20;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #2C3E50;
+    transform: rotate(90deg);
+    z-index: 20;
+}
+
+.portfolio-modal .modal-backdrop {
+    opacity: 0.800000011920928955078125;
+    display: none;
+}
+
+.image {
+    padding-bottom: 10px;
+}
+
+.info {
+    font-family: "Gill Sans", "Helvetica", sans-serif;
+    color: #e8491a;
+    line-height: 50px;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.description {
+    font-family: "Gill Sans", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 600px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+}
+
+.description2 {
+    font-family: "Helvetica", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: justify;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.close {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #e8491a;
+    font-size: 17px;
+    line-height: 0.1em;
+    margin-top: 60px;
+    margin-bottom: 110px;
+    opacity: 1;
+}
+
+
+/* -- ABOUT PAGE -- */
+
+#about {
+    min-height: 80vh;
+}
+
+.abouttext {
+    font-family: "Gill Sans", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 100px;
+    text-align: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.hi {
+    font-family: "Gill Sans", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-right: 40px;
+}
+
+.connecttext {
+    font-family: "Gill Sans", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.connect {
+    font-family: "Gill Sans", sans-serif;
+    color: #000;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.cv {
+    font-family: "Gill Sans", "Helvetica", sans-serif;
+    color: #e8491a;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 6px;
+}
+
+a {
+    text-decoration: none!important;
+    color: #e84918;
+}
+
+.cv:hover {
+    color: #17b6e7;
+}
+
+a:hover {
+    color: #17b6e7!important;
+}
+
+#contact {
+    /*    min-height: 15vh;*/
+    background-color: #e8491a;
+}
+
+.icon {
+    margin-top: 6px;
+    margin-top: 6px;
+    color: #eff0f3;
+    padding: 0px 5px;
+    font-size: 18px!important;
+}
+
+.icon:hover {
+    color: #17b6e7;
+}
+
+h4 {
+    font-family: prestige-elite-std, monospace;
+    font-style: normal;
+    color: #eff0f3;
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+
+/* -- MEDIA QUERIES 600PX PORTRAIT 1080PX-- */
+
+@media screen and (max-width:1024px) {
+    .logo {
+        margin-top: 400px;
+    }
+    .technoContainer {
+        left: 34%;
+    }
+    .center {
+        padding: 0px 150px;
+    }
+    .center2 {
+        padding: 0px;
+    }
+    #portfolio {
+        min-height: 75vh;
+    }
+    .connect {
+        padding-left: 0px;
+    }
+    .connecttext {
+        padding-left: 0px;
+    }
+    .abouttext {
+        padding-bottom: 20px;
+    }
+    #about {
+        min-height: 75vh;
+    }
+    .fixed {
+        margin-top: 10px!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo {
+        margin-top: 220px;
+    }
+    .technoContainer {
+        left: 30%;
+    }
+    .center {
+        padding: 0px 50px;
+    }
+    .fixed {
+        margin-top: 10px!important;
+    }
+    .connecttext {
+        padding-bottom: 80px;
+    }
+    .scrolltext {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .artisttext .line {
+        padding: 0px;
+        font-size: 18px;
+    }
+    .artisttext {
+        text-align: center;
+        padding-top: 10px;
+        line-height: 1.5em;
+        border-bottom: 0px;
+    }
+    .logo {
+        margin-top: 80px;
+    }
+    .technoContainer {
+        left: 10%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .center {
+        padding: 0px 20px;
+    }
+    .hi {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .abouttext {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .connect {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .connecttext {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .description {
+        width: 350px;
+    }
+    .portfolio-modal .close-modal {
+        display: none;
+    }
+    h3 {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .cv {
+        line-height: 1.5em;
+    }
+    .description {
+        width: 290px;
+    }
+    .artisttext {
+        margin-top: 50px;
+    }
+   
+    .technoContainer {
+        left: 0%;
+        padding: 0px 30px;
+    }
+}
